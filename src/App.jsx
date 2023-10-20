@@ -4,6 +4,8 @@ import viteLogo from "/vite.svg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Form/Login";
 import CreateAccount from "./Form/CreateAccount";
+import Formulir from "./Form/Formulir";
+import FormulirPerpus from "./Form/FormulirPerpus";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Login/>}/>
         <Route path="/register" element={<CreateAccount/>}/>
+        <Route path="/formulir" element={<Formulir/>}/>
+        <Route path="/formulirperpus" element={<FormulirPerpus/>}/>
       </Routes>
     </Router>
   );
