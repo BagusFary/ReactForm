@@ -11,12 +11,19 @@ export default function Formulir() {
   const [tanggallahir,setTanggalLahir] = useState('');
   const [alamat, setAlamat] = useState('');
 
+  const [file, setFile] = useState();
+
   function handleClick(event){
     event.preventDefault()
     alert(
       `Nama = ${nama} \nNo. Pekerja = ${noPekerja} \nNo Telp = ${telp} \nUnit = ${unit} \nTanggal Lahir = ${tanggallahir} \nAlamat = ${alamat}`
       
     )
+  }
+
+  function handleChange(e){
+    console.log(e.target.files);
+    setFile(URL.createObjectURL(e.target.files[0]));
   }
 
 
@@ -31,7 +38,7 @@ export default function Formulir() {
           </div>
             <div className="mb-4">
               <label
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="block text-gray-700 text-sm font-bold mb-2 "
                 for="nama"
               >
                 Nama
@@ -125,7 +132,9 @@ export default function Formulir() {
                 className=""
                 id="gambar"
                 type="file"
+                onChange={handleChange}
               />
+              <img src={file}/>
             </div>
             <div className="flex items-center justify-between">
               <button
