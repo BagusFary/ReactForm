@@ -1,15 +1,15 @@
 import React, { useState } from "react"; 
 
-const state = {
-    nama: 'Khen',
-    tanggalLahir: '13 April 2002'
-}
 
 
 
 export default function ImmutableState(){
+    const state = {
+        nama: 'Khen',
+        tanggalLahir: '13 April 2002'
+    }
     const [data, setData] = useState(state)
-    
+    ``
     function changeState(){
         const newData = {...data}
         newData.nama = 'Hafiz'
