@@ -49,6 +49,10 @@ export default function Todolist() {
     localStorage.setItem('completed', JSON.stringify(completed));
   }
 
+  useEffect(() =>{
+    saveTodoToLocal()
+  }, [todos, completed])
+
   return (
     <>
       <div className="bg-white mx-4 my-4 px-4 py-3 rounded-md shadow-md">
