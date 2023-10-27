@@ -55,6 +55,7 @@ export default function Todolist() {
 
   return (
     <>
+    <Header/>
       <div className="bg-white mx-4 my-4 px-4 py-3 rounded-md shadow-md">
         <h1 className="text-center font-semibold">TODO LIST MATA KULIAH FRONTEND</h1>
       </div>

@@ -8,7 +8,7 @@ export default function ImmutableState(){
         nama: 'Khen',
         tanggalLahir: '13 April 2002'
     }
-    
+
     const [data, setData] = useState(state)
     
     function changeState(){
@@ -20,6 +20,7 @@ export default function ImmutableState(){
     
     return(
         <>
+        <Header/>
         <div className="bg-white shadow-md rounded-md mx-4 my-6 px-4 py-2">
             <h1 className="text-gray-500 text-center font-semibold">IMMUTABLE REACTJS MATA KULIAH FRONTEND</h1>
             <div className="mt-8">
