@@ -7,6 +7,7 @@ import CreateAccount from "./Pages/CreateAccount";
 import Formulir from "./Pages/Formulir";
 import FormulirPerpus from "./Pages/FormulirPerpus";
 import Todolist from "./Pages/Todolist";
+import ImmutableState from "./Pages/ImmutableState";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/formulir" element={<Formulir/>}/>
         <Route path="/formulirperpus" element={<FormulirPerpus/>}/>
         <Route path="/todolist" element={<Todolist/>}/>
+        <Route path="/immutablestate" element={<ImmutableState/>}/>
       </Routes>
     </Router>
   );
