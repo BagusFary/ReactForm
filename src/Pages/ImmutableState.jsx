@@ -8,8 +8,9 @@ export default function ImmutableState(){
         nama: 'Khen',
         tanggalLahir: '13 April 2002'
     }
+    
     const [data, setData] = useState(state)
-    ``
+    
     function changeState(){
         const newData = {...data}
         newData.nama = 'Hafiz'
