@@ -20,6 +20,7 @@ export default function CreateAccount() {
   const navigate = useNavigate();
   return (
     <>
+        <Header/>
         <div className="container mx-auto px-4">            
                 <form action="" onSubmit={handleClick}>
                 <div className="mb-3">

@@ -30,6 +30,8 @@ export default function Formulir() {
 
   return (
     <>
+            <Header/>
+
        <div className="container flex justify-center m-2 pb-12">
         <div className="h-[300px] w-[450px]">
           <form action="" className="bg-white shadow-xl rounded px-8 pt-6 pb-8 mb-4 outline outline-2" onSubmit={handleClick}>
