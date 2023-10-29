@@ -16,7 +16,7 @@ export default function Formulir() {
   function handleClick(event){
     event.preventDefault()
     alert(
-      `Nama = ${nama} \nNo. Pekerja = ${noPekerja} \nNo Telp = ${telp} \nUnit = ${unit} \nTanggal Lahir = ${tanggallahir} \nAlamat = ${alamat}`
+      `Nama = ${nama} \nNo. Pekerja = ${noPekerja} \nNo Telp = ${telp} \nUnit = ${unit} \nTanggal Lahir = ${tanggallahir} \nAlamat = ${alamat} `
       
     )
   }
