@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-
+import Header from "./Header"
 
 export default function CreateAccount() {
 
@@ -42,27 +42,27 @@ export default function CreateAccount() {
                         <h1 className="text-base flex justify-end">Re-enter Password</h1>
                     </div>
                     <div className="outline outline-2 outline-offset-1 h-[350px] w-[600px]">
-                        <input type="text" className="outline outline-1 flex justify-start" value={name} onChange={(event) => {setName(event.target.value)}}/>
-                        <input type="email" className="outline outline-1 flex justify-start" value={email} onChange={(event) => {setEmail(event.target.value )}}/>
-                        <input type="text" className="outline outline-1 flex justify-start" />
+                        <input type="text" className="outline outline-1 flex justify-start h-[25px] w-[200px]" value={name} onChange={(event) => {setName(event.target.value)}}/>
+                        <input type="email" className="outline outline-1 flex justify-start h-[25px] w-[200px]" value={email} onChange={(event) => {setEmail(event.target.value )}}/>
+                        <input type="text" className="outline outline-1 flex justify-start h-[25px] w-[200px]" />
                         <h1 className="text-base flex justify-start">Country code---------------------City code-----------------Phone number</h1>
                         <div className="flex justify-start">
-                            <input type="text" className="outline outline-1 " />
-                            <input type="text" className="outline outline-1 " />
-                            <input type="text" className="outline outline-1 " />
+                            <input type="text" className="outline outline-1 h-[25px] w-[200px]" />
+                            <input type="text" className="outline outline-1 h-[25px] w-[200px]" />
+                            <input type="text" className="outline outline-1 h-[25px] w-[200px]" />
                         </div>
-                        <input type="text" className="outline outline-1 flex justify-start" />
-                       <textarea name="address" id="addresss" cols="20" rows="3" className="outline outline-1"></textarea>
+                        <input type="text" className="outline outline-1 flex justify-start h-[25px] w-[200px]" />
+                       <textarea name="address" id="addresss" cols="20" rows="2" className="outline outline-1 "></textarea>
                        <div className="flex justify-start">
-                        <select name="cars" id="cars" className="outline outline-1">
+                        <select name="cars" id="cars" className="outline outline-1 h-[25px] w-[200px]">
                           <option value="">-------Select One------</option>
                           <option value="Indonesia">Indonesia</option>
                           <option value="Japan">Japan</option>
                           <option value="Russia">Russia</option>
                         </select>
                        </div>
-                       <input type="password" className="outline outline-1 flex justify-start" />
-                       <input type="password" className="outline outline-1 flex justify-start" />
+                       <input type="password" className="outline outline-1 flex justify-start h-[25px] w-[200px]" />
+                       <input type="password" className="outline outline-1 flex justify-start h-[25px] w-[200px]" />
                         <div className="flex justify-start">
                             <input type="checkbox" name="checkbox" id="checkbox" className="mr-2" /> 
                             <h1 className="text-base">I accept the&nbsp;</h1>

@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import Header from "./Header"
 
 export default function Login() {
     const navigate = useNavigate();
@@ -17,8 +18,8 @@ export default function Login() {
                     </div>
                     <div className="outline outline-2 outline-offset-1 h-[200px] w-[500px]">
                         <form action="" onSubmit={() => navigate("/register")}>
-                            <input type="email" className="outline outline-1 flex justify-start" required/>
-                            <input type="password" className="outline outline-1 flex justify-start" required/>
+                            <input type="email" className="outline outline-1 h-[25px] w-[200px] flex justify-start" required/>
+                            <input type="password" className="outline outline-1 h-[25px] w-[200px] flex justify-start" required/>
                         
                             <div className="flex justify-start">
                                 <input type="checkbox" name="checkbox" id="checkbox" className="mr-2" /> 
