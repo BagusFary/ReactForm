@@ -1,7 +1,5 @@
 import React, {useState} from "react";
-import Header from "./Header";
-
-
+import Header from "./Header"
 
 export default function ImmutableArray(){
     const myArray = ['Khen', 'Hafiz', 'Adit']

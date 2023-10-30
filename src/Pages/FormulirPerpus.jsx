@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Header from "./Header";
+import Header from "./Header"
 
 export default function FormulirPerpus() {
   const navigate = useNavigate();
