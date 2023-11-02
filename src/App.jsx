@@ -23,11 +23,11 @@ function App() {
     }
   ])
   return (
-    <>
+    
       <Suspense fallback={<h1>LOADING BANG MESSI</h1>}>
         <RouterProvider router={router}/>
       </Suspense>
-    </>
+    
 
     
   );
