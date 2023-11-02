@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <>
       <Header />
-      <div className="bg-gradient-to-r from-cyan-500 to-blue-200 h-full">
+      <div className="bg-gradient-to-r from-cyan-500 to-blue-200 h-screen">
         <div className="flex justify-center">
           <h1 className="text-3xl text-gray-900 dark:text-white mt-2">
             Frontend Projects
