@@ -8,17 +8,41 @@ export default function Projects() {
   return (
     <>
       <Header />
-      <div className="flex justify-center mt-4">
-        <h1 className="text-3xl text-gray-900 dark:text-white">
-          Frontend Projects
-        </h1>
-      </div>
-      <div className="flex flex-wrap gap-1 justify-center mt-3">
-      <Button gradientMonochrome="cyan" onClick={() => navigate("/login")}>Login</Button>
-      <Button gradientMonochrome="cyan" onClick={() => navigate("/register")}>Register</Button>
-      <Button gradientMonochrome="cyan" onClick={() => navigate("/formulir")}>Formulir 1</Button>
-      <Button gradientMonochrome="cyan" onClick={() => navigate("/formulir2")}>Formulir 2</Button>
-      <Button gradientMonochrome="cyan" onClick={() => navigate("/todolist")}>Todolist</Button>
+      <div className="bg-gradient-to-r from-cyan-500 to-blue-200 h-full">
+        <div className="flex justify-center">
+          <h1 className="text-3xl text-gray-900 dark:text-white mt-2">
+            Frontend Projects
+          </h1>
+        </div>
+        <div className="flex flex-wrap gap-2 justify-center mt-3">
+          <Button gradientMonochrome="lime" onClick={() => navigate("/login")}>
+            Login
+          </Button>
+          <Button
+            gradientMonochrome="lime"
+            onClick={() => navigate("/register")}
+          >
+            Register
+          </Button>
+          <Button
+            gradientMonochrome="lime"
+            onClick={() => navigate("/formulir")}
+          >
+            Formulir 1
+          </Button>
+          <Button
+            gradientMonochrome="lime"
+            onClick={() => navigate("/formulir2")}
+          >
+            Formulir 2
+          </Button>
+          <Button
+            gradientMonochrome="lime"
+            onClick={() => navigate("/todolist")}
+          >
+            Todolist
+          </Button>
+        </div>
       </div>
     </>
   );
